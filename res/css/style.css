@@ -1,0 +1,12 @@
+.resume-container {
+	background-color: red;
+}
+.resume-header {
+	min-height: 40px;
+	background-color: blue;
+}
+.resume-section {
+	color: blue;
+	height: 70vh;
+	min-height: all;
+}
