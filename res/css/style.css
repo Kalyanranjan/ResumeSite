@@ -1,12 +1,70 @@
-.resume-container {
-	background-color: red;
+/* Normalize css */
+@import url(./normalize.css);
+/* Google Font Import */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,700);
+/* Font Awesome Import */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+/* Dev Icons Import */
+@import url(https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css);
+
+html {
+	cursor: default;
+	min-width: 300px;
+}
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14pt;
+	background-color: #efeff6;
+}
+ol, ul {
+	padding-left: 10px;
+}
+li {
+	list-style-type: none;
+}
+.flex-central {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} /*Repetitive Handy Class */
+.block-central {
+	display: block;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}/*Repetitive Handy Class */
+
+.body-wrap {
 }
 .resume-header {
-	min-height: 40px;
 	background-color: blue;
 }
 .resume-section {
-	color: blue;
-	height: 70vh;
-	min-height: all;
+	min-height: 500px;
+	background-color: #efeff6;
+}
+
+.resume-section .resume-section-title {
+	background-color: red;
+}
+.resume-section .resume-section-content-div {
+	/*width: 80vw;*/
+	text-align: center;
+	width: 900px;
+}
+.resume-section:nth-child(odd) {
+	background-color: #222222;
+	color: #FFFFFF;
+}
+.resume-bCard p.quote {
+	margin: 20px 0px 20px 0px;
+	width: 100%;
+	/*background-color: red;*/
+}
+.resume-bCard img.resume-bCard-pic {
+	height: 220px;
+	width: 220px;
+	padding: 7px;
+	border: 10px solid #222222;
 }
