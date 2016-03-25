@@ -8,16 +8,20 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="./res/css/style.css">
+	<!-- JQuery CDN -->
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+	<!-- Custom Script -->
+	<script src="./res/js/indexjs.js"></script>
 </head>
 <body>
 	<div class="body-wrap">
 		<header class="resume-header block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="resume-header-inner flex-central">
-					<div class="">EDUCATION</div>
-					<div>SKILLS</div>
-					<div>EXPERIENCE</div>
-					<div>COURSES</div>
-					<div>CONTACT</div>
+					<div id="ednScroll" class="hello">EDUCATION</div>
+					<div id="skillsScroll">SKILLS</div>
+					<div id="expScroll">EXPERIENCE</div>
+					<div id="coursesScroll">COURSES</div>
+					<div id="contactScroll">CONTACT</div>
 				</div>
 		</header>
 		<div class="resume-content-wrap">
@@ -41,7 +45,7 @@
 						</p>
 					</div>
 			</div>
-			<div class="resume-edn-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div id="resume-edn-wrap" class="resume-edn-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="resume-section-title block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						EDUCATION
 				</h2>
@@ -68,7 +72,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="resume-skills-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div id="resume-skills-wrap" class="resume-skills-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="resume-section-title block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						SKILLS
 				</h2>
@@ -99,7 +103,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="resume-exp-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div id="resume-exp-wrap" class="resume-exp-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="resume-section-title block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						EXPERIENCE
 				</h2>
@@ -132,7 +136,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="resume-courses-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div id="resume-courses-wrap" class="resume-courses-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="resume-section-title block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						COURSES
 				</h2>
@@ -157,18 +161,31 @@
 					</ul>
 				</div>
 			</div>
-			<div class="resume-courses-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div id="resume-contact-wrap" class="resume-contact-wrap resume-section block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<h2 class="resume-section-title block-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						CONTACT
 				</h2>
-				<div class="resume-courses resume-section-content flex-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<ul class="resume-courses-list resume-section-content-div">
-						<li class="courses-list-item list-item">
-							<h3 class="courses-list-item-title list-item-title">
+				<div class="resume-contact resume-section-content flex-central col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<ul class="resume-contact-list resume-section-content-div">
+						<li class="contact-list-item list-item">
+							<h3 class="contact-list-item-title list-item-title">
 								kalyanranjanp@gmail.com
 							</h3>
-							<div class="courses-list-item-desc list-item-desc">
+							<div class="contact-list-item-desc list-item-desc">
 								<p>300 Summit Street, Hartford, CT, 06106 </p>
+							</div>
+							<h3 class="footmast">
+								<i class="devicon-ubuntu-plain colored"></i>
+								<i class="devicon-chrome-plain"></i>
+								<img src="./res/img/sublime.png" alt="Sublime Text 3 Editor">
+								<img src="./res/img/emmet.png" alt="Emmet for sublime">
+
+							</h3>
+							<div>
+								<p class="built-with">Built on Ubuntu, with Chrome and Sublime w/ Emmet </p>
+							</div>
+							<div class="copyright">
+								&copy; 2016 Kalyan Ranjan Parajuli
 							</div>
 						</li>
 					</ul>

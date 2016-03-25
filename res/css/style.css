@@ -73,6 +73,10 @@ h3 {
 .resume-header-inner div{
 	padding: 0 0.5vw 0 0.5vw;
 }
+.nav-active {
+	background-color: #efeff6;
+	color: #222222;
+}
 .resume-content-wrap {
 	padding-top: 8vh; 
 }
@@ -150,4 +154,33 @@ h3 {
 }
 .resume-skills-icons {
 	font-size: 40pt;
+}
+.footmast {
+	padding-top: 80px;
+	font-size: 80pt;
+	/*background-color: #efeff6*/
+}
+.footmast img {
+	height: 80pt;
+	width: 80pt;
+	position: relative;
+	bottom: 10pt;
+}
+@media and (max-width: 800px){
+	.footmast {
+		padding-top: 30px;
+		font-size: 50pt;
+		background-color: #efeff6
+	}
+	.footmast img {
+		height: 100pt;
+		width: 100pt;
+		position: relative;
+		bottom: 10pt;
+	}
+}
+.built-with {
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 10pt;
 }
