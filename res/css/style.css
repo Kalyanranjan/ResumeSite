@@ -57,7 +57,8 @@ h3 {
 .body-wrap {
 }
 .resume-header {
-	background-color: blue;
+	background-color: #333399;
+	color: #FFFFFF;
 	position: fixed;
 	top: 0px;
 	z-index: 100;
@@ -80,7 +81,9 @@ h3 {
 	min-height: 500px;
 	height: 90vh;
 }
-
+.resume-section-content {
+	padding-top: 8%;
+}
 .resume-section .resume-section-title {
 	background-color: #4ba6f5;
 }
@@ -112,6 +115,21 @@ h3 {
 	width: 100%;
 	font-style: italic;
 }
+@media screen and (max-width: 350px) {
+	.resume-bCard h1{
+		font-size: 2rem;
+	}
+	.links-container {
+		height: 25pt;
+		line-height: 25pt;
+	}
+	.fa {
+		font-size: 20pt;
+	}
+	p.quote {
+		font-size: 10pt
+	}
+}
 .resume-bCard img.resume-bCard-pic {
 	height: 220px;
 	width: 220px;
@@ -121,4 +139,15 @@ h3 {
 .list-item-desc {
 	font-size: 1.8rem;
 	font-style: italic;
+}
+@media screen and (max-width: 350px) {
+	.list-item-title {
+		font-size: 6vw;
+	}
+	.list-item-desc {
+		font-size: 5vw;
+	}
+}
+.resume-skills-icons {
+	font-size: 40pt;
 }
