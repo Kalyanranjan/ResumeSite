@@ -17,10 +17,14 @@ body {
 	background-color: #efeff6;
 }
 ol, ul {
-	padding-left: 10px;
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
 }
 li {
 	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
 }
 h1 {
 	font-size: 4.2rem;
@@ -30,6 +34,12 @@ h2 {
 }
 h3 {
 	font-size: 2.5rem;
+}
+.bred {
+	background-color: red;
+}
+.bgreen {
+	background-color: green;
 }
 .flex-central {
 	/*height: 100%;*/
@@ -48,10 +58,26 @@ h3 {
 }
 .resume-header {
 	background-color: blue;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+	border-bottom: 1px solid #efeff6;
+	box-shadow: 0px 3px 10px #222222;
+}
+@media screen and (max-width: 600px) {
+	.resume-header {
+		font-size: 3vw;
+	}
+}
+.resume-header-inner div{
+	padding: 0 0.5vw 0 0.5vw;
+}
+.resume-content-wrap {
+	padding-top: 8vh; 
 }
 .resume-section {
-	min-height: 500px;
 	background-color: #efeff6;
+	min-height: 500px;
 	height: 90vh;
 }
 
@@ -63,14 +89,28 @@ h3 {
 	text-align: center;
 	max-width: 900px;
 }
-.resume-section:nth-child(odd) {
+.resume-section:nth-child(even) {
 	background-color: #222222;
 	color: #FFFFFF;
 }
+.links-container {
+	height: 50pt;
+	line-height: 50pt;
+}
+.fa {
+	width: 35pt;
+	height: 45pt;
+}
+.resume-bCard .fa:hover {
+	font-size: 35pt;
+	color: #222222;
+}
 .resume-bCard p.quote {
+	position: relative;
+	top: -20px;
 	margin: 20px 0px 20px 0px;
 	width: 100%;
-	/*background-color: red;*/
+	font-style: italic;
 }
 .resume-bCard img.resume-bCard-pic {
 	height: 220px;
